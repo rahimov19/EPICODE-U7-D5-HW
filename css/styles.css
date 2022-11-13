@@ -1,0 +1,209 @@
+:root {
+  --home-bg-color: #000;
+  --account-bg-color: #f3f3f3;
+  --text-color: #fff;
+  --primary-color: #e40a13;
+  --secondary-color: #929292;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+}
+.leftside {
+  display: flex;
+  justify-content: center;
+}
+#mainbox {
+  margin-inline: auto;
+}
+label {
+  font-size: 1.4em;
+}
+input {
+  border: none;
+}
+select {
+  height: 3em;
+  background-color: #929292;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+}
+#mainbox h1 {
+  color: aliceblue;
+}
+.leftside img {
+  object-fit: cover;
+  overflow: hidden;
+  height: 100%;
+  /* aspect-ratio: 1/1; */
+}
+.leftside {
+  height: 80vh;
+}
+.carousel-control-prev {
+  width: 8em;
+  display: flex;
+  justify-content: flex-end;
+}
+.carousel-control-next {
+  width: 8em;
+  display: flex;
+  justify-content: flex-start;
+}
+.rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background: transparent;
+}
+.col-3 {
+  display: flex;
+  justify-content: flex-start;
+}
+div.col-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+span.genre.col-2 {
+  display: flex;
+  justify-content: center;
+  /* margin-right: 1em; */
+  width: 13%;
+}
+footer {
+  margin-top: 10em;
+}
+.title {
+  font-size: 1.4em;
+}
+body {
+  background: var(--home-bg-color);
+}
+
+.col-md-2 {
+  position: relative;
+  height: 20em;
+}
+.btn {
+  border-radius: 0;
+}
+
+#logo {
+  height: 48px;
+}
+
+#avatar {
+  height: 36px;
+}
+#avatar-small {
+  height: 24px;
+  margin-right: 10px;
+}
+.dropdown-menu {
+  margin-left: -100px;
+  background-color: var(--home-bg-color);
+}
+
+.icon {
+  margin: 4px 10px;
+}
+
+.dropdown-menu a {
+  font-size: 12px;
+}
+
+.genre-details {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.genre-button {
+  margin-left: 4em;
+}
+
+.movie-row {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.movie-cover {
+  width: 99%;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+.movie-cover:hover {
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.carousel-control-next {
+  margin-right: -5%;
+}
+
+.carousel-control-prev {
+  margin-left: -5%;
+}
+
+.account-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--account-bg-color);
+}
+
+.profile-page {
+  padding: 5% 20%;
+  color: #fff;
+}
+
+.profile-title {
+  font-size: 64px;
+}
+
+.edit-icon {
+  position: relative;
+  left: 10%;
+  top: -10%;
+  background: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+input[type="text"] {
+  padding: 10px;
+  background: var(--secondary-color);
+  width: 100%;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-bottom: 10px;
+}
+
+.infobtn {
+  position: absolute;
+  right: 10px;
+  margin: 10px;
+  border-radius: 0 10px 0 10px;
+  transition: 0.3s;
+}
+.infobtn:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
