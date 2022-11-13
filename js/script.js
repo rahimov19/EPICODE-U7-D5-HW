@@ -78,15 +78,19 @@ let createRowHorror = function (moviesHorror) {
   moviesHorror.forEach((movie) => {
     rowhorror1.innerHTML += `<div class="col-md-2">
         <img class="movie-cover" src=${movie.imageUrl} />
-        <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</button>
+        <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</a>
+        <div class="fadeout"></div>
+        <div class="fadeoutText"><h3>${movie.name}</h3> <p class="imageDescription">${movie.description}</p></div>
+       
 
 
       </div>`;
     rowhorror2.innerHTML += `<div class="col-md-2">
       <img class="movie-cover" src=${movie.imageUrl} />
-      <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</button>
-
-    </div>`;
+      <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</a>
+      <div class="fadeout"></div>
+      <div class="fadeoutText"><h3>${movie.name}</h3> <p class="imageDescription">${movie.description}</p></div>
+      </div>`;
   });
 };
 let createRowAction = function (moviesAction) {
@@ -95,14 +99,16 @@ let createRowAction = function (moviesAction) {
   moviesAction.forEach((movie) => {
     rowaction1.innerHTML += `<div class="col-md-2">
           <img class="movie-cover" src=${movie.imageUrl} />
-          <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</button>
-
+          <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</a>
+          <div class="fadeout"></div>
+          <div class="fadeoutText"><h3>${movie.name}</h3> <p class="imageDescription">${movie.description}</p></div>
 
         </div>`;
     rowaction2.innerHTML += `<div class="col-md-2">
         <img class="movie-cover" src=${movie.imageUrl} />
-        <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</button>
-
+        <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</a>
+        <div class="fadeout"></div>
+        <div class="fadeoutText"><h3>${movie.name}</h3> <p class="imageDescription">${movie.description}</p></div>
 
       </div>`;
   });
@@ -114,14 +120,16 @@ let createRowCrime = function (moviesCrime) {
   moviesCrime.forEach((movie) => {
     rowcrime1.innerHTML += `<div class="col-md-2">
             <img class="movie-cover" src=${movie.imageUrl} />
-            <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</button>
-
+            <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</a>
+            <div class="fadeout"></div>
+            <div class="fadeoutText"><h3>${movie.name}</h3> <p class="imageDescription">${movie.description}</p></div>
 
           </div>`;
     rowcrime2.innerHTML += `<div class="col-md-2">
           <img class="movie-cover" src=${movie.imageUrl} />
-      <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</button>
-
+      <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</a>
+      <div class="fadeout"></div>
+      <div class="fadeoutText"><h3>${movie.name}</h3> <p class="imageDescription">${movie.description}</p></div>
         </div>`;
   });
 };
