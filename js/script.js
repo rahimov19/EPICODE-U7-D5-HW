@@ -81,8 +81,6 @@ let createRowHorror = function (moviesHorror) {
         <a href="details.html?movieID=${movie._id}" class="btn-dark btn infobtn">Info</a>
         <div class="fadeout"></div>
         <div class="fadeoutText"><h3>${movie.name}</h3> <p class="imageDescription">${movie.description}</p></div>
-       
-
 
       </div>`;
     rowhorror2.innerHTML += `<div class="col-md-2">
